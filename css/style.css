@@ -10,7 +10,6 @@
 
     body {
       background: linear-gradient( #a6713a);
-      background: linear-gradient(180deg, #c29063, #a6713a);
       color: #3a2a1d;
       display: flex;
       justify-content: center;
@@ -58,7 +57,6 @@
     /* Tarjetas */
     .card {
       background: #f5e1c6;
-      background: #daa155;
       padding: 20px;
       border-radius: 15px;
       margin-bottom: 20px;
