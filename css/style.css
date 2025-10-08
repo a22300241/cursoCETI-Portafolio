@@ -1,139 +1,115 @@
  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", sans-serif;
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-      background: linear-gradient(180deg, #c29063, #a6713a);
-      color: #3a2a1d;
-      display: flex;
-      justify-content: center;
-      padding: 40px;
-    }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #ffe4ec, #f8c1d9);
+    color: #5a2d41;
+}
 
-    .container {
-      max-width: 700px;
-      width: 100%;
-    }
-
-    /* Nombre */
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .header h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      position: relative;
-      display: inline-block;
-      padding: 0 10px;
-    }
-
-    /* Efecto decorativo al nombre */
-    .header h1::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -8px;
-      width: 100%;
-      height: 5px;
-      background: #ffb347;
-      border-radius: 5px;
-      z-index: -1;
-    }
-
-    .header p {
-      font-size: 1rem;
-      margin-top: 8px;
-      color: #4a3b2d;
-    }
-
-    /* Tarjetas */
-    .card {
-      background: #f5e1c6;
-      padding: 80px;
-      border-radius: 15px;
-      margin-bottom: 20px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    }
-
-    /* Acerca de mí */
-    .about {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .about img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    /* Enlaces */
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      font-weight: 600;
-      text-align: center;
-    }
-
-    .links a {
-      text-decoration: none;
-      color: #3a2a1d;
-    }
-
-    .links a:hover {
-      text-decoration: underline;
-    }
-
-    /* Proyectos */
-    .projects h3 {
-      margin-bottom: 10px;
-    }
-
-    .projects p {
-      margin-bottom: 8px;
-      line-height: 1.4;
-    }
-
-    .projects a {
-      color: #a35b1a;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .projects a:hover {
-      text-decoration: underline;
-    }
-
-    hr {
-      margin: 15px 0;
-      border: none;
-      border-top: 1px solid #d3b999;
-    }
-
-      .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* separación entre imágenes */
-    justify-content: center;
-  }
-  figure {
+/* Encabezado */
+header {
+    background: linear-gradient(90deg, #ea6d9b, #e14b7e);
+    color: #ffffff;
     text-align: center;
-    max-width: 250px; /* tamaño máximo de cada figura */
-  }
-  figure img {
-    width: 100%; /* para que la imagen se ajuste */
+    padding: 2rem 1rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Secciones */
+.card {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #e14b7e;
+    margin-bottom: 1rem;
+}
+
+/* Enlaces */
+#links ul {
+    list-style: none;
+    text-align: center;
+}
+
+#links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#links a {
+    color: #ea6d9b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.6rem;
     border-radius: 8px;
-  }
-  figcaption {
-    font-size: 14px;
-    color: gray;
-    margin-top: 5px;
-  }
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+/* Proyectos */
+.project-card {
+    background: #ffe4ec;
+    border-left: 5px solid #ea6d9b;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    background: #f8c1d9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+    color: #e14b7e;
+    text-decoration: none;
+}
+
+/* Pie de página */
+footer {
+    background: #715c5c;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Centrar la lista */
+.project-card ul, .project-card ol {
+    margin: 0 auto;
+    display: table;
+    text-align: left;
+    list-style: none;
+}
+.project-card li {
+    text-align: center;
+}
