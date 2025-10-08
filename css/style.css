@@ -112,10 +112,8 @@ footer {
 }
 .project-card li {
     text-align: center;
-<<<<<<< Updated upstream
 }
-=======
-}
+
 
 /* Layout */
 .page {
@@ -139,10 +137,9 @@ footer {
 .sidebar img:hover {
   transform: scale(1.2);
 }
-/* .content {
+.content {
   flex: 1;
   padding: 20px;
   background-color: #FFF2CF;
   color: #5B3222;
-} */
->>>>>>> Stashed changes
+} 
