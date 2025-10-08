@@ -112,4 +112,37 @@ footer {
 }
 .project-card li {
     text-align: center;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+/* Layout */
+.page {
+  display: flex;
+}
+.sidebar {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  background: #8B5B34;
+  border-right: 3px solid #5B3222;
+}
+.sidebar img {
+  width: 40px;
+  transition: transform 0.2s;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
+}
+.sidebar img:hover {
+  transform: scale(1.2);
+}
+/* .content {
+  flex: 1;
+  padding: 20px;
+  background-color: #FFF2CF;
+  color: #5B3222;
+} */
+>>>>>>> Stashed changes
