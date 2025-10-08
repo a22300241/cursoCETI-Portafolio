@@ -72,11 +72,11 @@ h2 {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
-#links a:hover {
+/* #links a:hover {
     background-color: #8B5B34;
     color: #FFF2CF;
     transform: scale(1.05);
-}
+} */
 
 /* Proyectos */
 .project-card {
