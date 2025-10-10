@@ -147,4 +147,17 @@ footer {
   background-color: #FFF2CF;
   color: #5B3222;
 } 
+.project-image-container {
+    text-align: center; /* Centra las imágenes dentro del contenedor */
+    margin-top: 1rem;
+}
+
+/* Estilo para las imágenes del proyecto */
+.project-image {
+    width: 48%; /* Ancho reducido para que quepan dos */
+    display: inline-block; /* Permite que estén una al lado de la otra */
+    margin: 0 0.5%; /* Pequeño margen entre las imágenes */
+    border-radius: 8px; /* Bordes redondeados consistentes */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
